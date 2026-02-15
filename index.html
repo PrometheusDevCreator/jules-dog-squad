@@ -81,8 +81,8 @@ section { padding:100px 2rem; }
 .about { background:white; }
 .about-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1fr 1.2fr; gap:4rem; align-items:center; }
 .about-image-stack { position:relative; height:500px; }
-.about-img-1 { position:absolute; top:0; left:0; width:300px; height:380px; object-fit:cover; border-radius:var(--r); box-shadow:var(--sh-lg); z-index:2; border:3px solid white; }
-.about-img-2 { position:absolute; bottom:0; right:0; width:260px; height:320px; object-fit:cover; border-radius:var(--r); box-shadow:var(--sh-lg); z-index:1; border:3px solid white; }
+.about-img-1 { position:absolute; top:0; left:0; width:280px; height:360px; object-fit:cover; border-radius:var(--r); box-shadow:var(--sh-lg); z-index:2; border:3px solid white; }
+.about-img-2 { position:absolute; bottom:0; right:30px; width:240px; height:300px; object-fit:cover; border-radius:var(--r); box-shadow:var(--sh-lg); z-index:1; border:3px solid white; }
 .about-logo-float { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:120px; height:120px; border-radius:50%; object-fit:cover; border:4px solid var(--tan); box-shadow:var(--sh); z-index:3; background:white; }
 .about-text h2 { font-family:'Fredoka',sans-serif; font-size:2rem; color:var(--dark); margin-bottom:1.5rem; }
 .about-text p { font-size:1.05rem; line-height:1.8; color:var(--olive); margin-bottom:1rem; }
@@ -292,7 +292,7 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#booking" class="nav-cta">Book a Walk</a></li>
+      
     </ul>
     <div class="hamburger" id="hamburger" onclick="toggleNav()">
       <span></span><span></span><span></span>
@@ -307,14 +307,15 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
     <div class="hero-text">
       <p class="hero-tagline">South Manchester's Favourite Dog Walking Service</p>
       <h1>Adventures<span>Await.</span></h1>
-      <p class="hero-subtitle">Rain, shine, frost or mud &mdash; Riley and the squad are out every day exploring Chorlton's finest green spaces. Your dog deserves their place in the pack.</p>
+      <p class="hero-subtitle">Rain, shine, frost or mud &mdash; Riley and the squad are out every day exploring Chorlton's finest green spaces. Your dog deserves part of the squad.</p>
       <div class="hero-badges">
         <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg> Insured &amp; DBS Checked</span>
         <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Small Group Walks</span>
         <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Chorlton &amp; Surrounds</span>
+        <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg> Dog First Aid Trained</span>
       </div>
       <div class="hero-buttons">
-        <a href="#booking" class="btn-primary">Book a Walk <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="https://wa.me/447961580079" target="_blank" class="btn-primary">Get in Touch <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <a href="#about" class="btn-secondary">Meet the Squad</a>
       </div>
     </div>
@@ -339,13 +340,13 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
       <img src="data:image/jpeg;base64,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" alt="Jules' Dog Squad logo" class="about-logo-float">
     </div>
     <div class="about-text">
-      <h2>Every dog deserves to feel like part of the pack.</h2>
+      <h2>Every dog deserves to feel part of the squad.</h2>
       <p>Jules has been walking dogs professionally across the Chorlton area for years, building a loyal squad of four-legged regulars who know the fields, paths and puddles of South Manchester better than most humans.</p>
       <p>With Riley leading the charge (usually towards the nearest mud), every walk is a proper adventure. Whether it's a frosty morning at Turn Moss, a sunny romp through Chorlton Ees, or a rainy plod through Longford Park, the squad gets out in all conditions &mdash; because happy dogs don't check the weather forecast.</p>
       <p>Small group sizes mean every dog gets proper attention, socialisation with their mates, and the kind of exercise that leaves them snoozing contentedly until teatime.</p>
       <div class="about-stats">
-        <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">Years Walking</span></div>
-        <div class="stat-item"><span class="stat-number">365</span><span class="stat-label">Days a Year</span></div>
+        <div class="stat-item"><span class="stat-number">Est. 2022</span><span class="stat-label">Established</span></div>
+        <div class="stat-item"><span class="stat-number">First Aid</span><span class="stat-label">Dog First Aid Trained</span></div>
         <div class="stat-item"><span class="stat-number">5 max</span><span class="stat-label">Dogs per Walk</span></div>
       
       <div style="margin-top:2.5rem;padding-top:2rem;border-top:2px solid var(--cream);">
@@ -364,26 +365,39 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
   <div class="section-header">
     <span class="section-label">What We Offer</span>
     <h2 class="section-title">Services</h2>
-    <p class="section-desc">From group adventures to solo strolls, we've got your dog covered &mdash; come rain, shine, or sideways Manchester drizzle.</p>
+    <p class="section-desc">From group adventures to solo strolls, dogs and cats covered &mdash; come rain, shine, or sideways Manchester drizzle.</p>
   </div>
   <div class="services-grid">
     <div class="service-card">
       <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 20h5v-2a3 3 0 0 0-5.356-1.857"/><path d="M7 20H2v-2a3 3 0 0 1 5.356-1.857"/><circle cx="12" cy="7" r="4"/><path d="M12 11c-4 0-6 2-6 5v4h12v-4c0-3-2-5-6-5z"/></svg></div>
       <h3>Group Walk</h3>
-      <p>The full squad experience. Your dog joins a small group of compatible pals for a proper 60-minute adventure across our favourite green spaces. Maximum 5 dogs ensures everyone gets attention and space to explore.</p>
+      <p>The full squad experience. Your dog joins a small group of compatible pals for a proper 60-minute adventure across our favourite green spaces. Maximum 5 dogs ensures everyone gets attention and space to explore. Every dog comes home showered and towel dried.</p>
       <span class="service-price">&pound;15 <small>/ walk</small></span>
     </div>
     <div class="service-card">
       <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
       <h3>Solo Walk</h3>
-      <p>One-on-one time for dogs who prefer their own company, need extra attention, or are still building confidence. A dedicated 45-minute walk at your dog's own pace and comfort level.</p>
-      <span class="service-price">&pound;20 <small>/ walk</small></span>
+      <p>One-on-one time for dogs who prefer their own company, need extra attention, or are still building confidence. A dedicated 30-minute walk at your dog's own pace and comfort level.</p>
+      <span class="service-price">&pound;18 <small>/ walk</small></span>
     </div>
     <div class="service-card">
       <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-      <h3>Pop-In Visit</h3>
-      <p>A 30-minute home visit for toilet breaks, feeding, a bit of company and a garden potter. Ideal for puppies, older dogs, or if you're stuck at work a bit longer than planned.</p>
-      <span class="service-price">&pound;12 <small>/ visit</small></span>
+      <h3>Pop-In / Puppy Visit</h3>
+      <p>A home visit including a 15-minute walk &mdash; perfect for puppies, older dogs, or if you're stuck at work a bit longer than planned. Toilet breaks, feeding, a bit of company and some fresh air.</p>
+      <span class="service-price">&pound;18 <small>/ visit</small></span>
+    </div>
+  
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5c-3.87 0-7 3.13-7 7 0 1.93.78 3.68 2.05 4.95l.95.95V21h3v-2h2v2h3v-3.1l.95-.95A6.97 6.97 0 0 0 19 12c0-3.87-3.13-7-7-7z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M5 5L2 2M19 5l3-3"/></svg></div>
+      <h3>Cat Visit</h3>
+      <p>A 10&ndash;15 minute visit to feed, let out, play, and change the litter. Daily pics and updates so you know your feline friend is happy while you're away.</p>
+      <span class="service-price">&pound;10 <small>/ visit</small></span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5c-3.87 0-7 3.13-7 7 0 1.93.78 3.68 2.05 4.95l.95.95V21h3v-2h2v2h3v-3.1l.95-.95A6.97 6.97 0 0 0 19 12c0-3.87-3.13-7-7-7z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M5 5L2 2M19 5l3-3"/></svg></div>
+      <h3>Double Cat Visit</h3>
+      <p>Two visits in the same day &mdash; morning and evening, or whatever schedule suits your cat best. Same great care, twice the cuddles.</p>
+      <span class="service-price">&pound;17 <small>/ day</small></span>
     </div>
   </div>
 </section>
@@ -393,7 +407,7 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
   <div class="section-header">
     <span class="section-label">Where We Walk</span>
     <h2 class="section-title">Our Stomping Grounds</h2>
-    <p class="section-desc">Three brilliant green spaces that the squad knows inside out &mdash; every shortcut, every good sniffing spot, every puddle worth jumping in.</p>
+    <p class="section-desc">The green spaces the squad knows inside out &mdash; every shortcut, every good sniffing spot, every puddle worth jumping in.</p>
   </div>
   <div class="areas-grid">
     <div class="area-card">
@@ -408,8 +422,8 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
     </div>
     <div class="area-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16l-7-3.5L5 21z"/><path d="M9 10h6M9 14h4"/></svg>
-      <h3>Longford Park</h3>
-      <p>A beautiful Victorian park with mature trees, gentle paths and plenty of friendly dogs to say hello to. Great for calmer walks and senior pups.</p>
+      <h3>Whalley Range &amp; Old Trafford</h3>
+      <p>Local parks and green spaces perfect for the squad. Great paths, friendly faces, and always something new to sniff. Convenient pick-up and drop-off for the neighbourhood.</p>
     </div>
   </div>
 </section>
@@ -433,65 +447,26 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
   </div>
 </section>
 
-<!-- BOOKING -->
-<section class="booking" id="booking">
-  <div class="section-header">
-    <span class="section-label">Ready to Join the Squad?</span>
-    <h2 class="section-title">Book a Walk</h2>
-    <p class="section-desc">Pick a date, choose your preferred time, fill in your details and we'll send it straight to Jules on WhatsApp.</p>
-  </div>
-  <div class="booking-container">
-    <div class="booking-calendar">
-      <div class="cal-header">
-        <h3 id="calMonthYear"></h3>
-        <div class="cal-nav">
-          <button onclick="changeMonth(-1)" aria-label="Previous month"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
-          <button onclick="changeMonth(1)" aria-label="Next month"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
-        </div>
-      </div>
-      <div class="cal-body">
-        <div class="cal-weekdays"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
-        <div class="cal-days" id="calDays"></div>
-        <p style="text-align:center;font-size:0.8rem;color:var(--khaki);margin-top:1rem;padding-top:1rem;border-top:1px solid var(--cream);">Sundays closed. Select a date to continue.</p>
-      </div>
-    </div>
-    <div class="booking-form-panel">
-      <h3>Booking Details</h3>
-      <p class="booking-selected-date" id="selectedDateDisplay">Select a date from the calendar</p>
-      <div id="timeSlotSection" style="display:none;">
-        <label style="display:block;font-weight:700;font-size:0.85rem;color:var(--olive);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.5px;">Preferred Time</label>
-        <div class="time-slots" id="timeSlots"></div>
-      </div>
-      <form id="bookingForm" onsubmit="submitBooking(event)">
-        <div class="form-group"><label>Your Name</label><input type="text" placeholder="e.g. Sarah Thompson" required id="bookName"></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="e.g. 07123 456789" required id="bookPhone"></div>
-        <div class="form-group"><label>Dog's Name &amp; Breed</label><input type="text" placeholder="e.g. Bella, Cockapoo" required id="bookDog"></div>
-        <div class="form-group"><label>Walk Type</label><select required id="bookType"><option value="">Select a service...</option><option value="group">Group Walk - &pound;15</option><option value="solo">Solo Walk - &pound;20</option><option value="popin">Pop-In Visit - &pound;12</option></select></div>
-        <div class="form-group"><label>Anything We Should Know?</label><textarea placeholder="Allergies, behaviour notes, medication, favourite treats..." id="bookNotes"></textarea></div>
-        <button type="submit" class="booking-submit" id="bookSubmit" disabled>Send Booking via WhatsApp</button>
-      </form>
-    </div>
-  </div>
-</section>
+
 
 <!-- TESTIMONIALS -->
 <section class="testimonials" id="testimonials">
   <div class="section-header">
-    <span class="section-label">Happy Pack Members</span>
+    <span class="section-label">Happy Squad Members</span>
     <h2 class="section-title">What Dog Parents Say</h2>
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card">
-      <p class="testimonial-text">Jules is absolutely brilliant with our anxious rescue. Within two weeks he was trotting out happily with the group like he'd been doing it his whole life. Can't recommend her enough.</p>
-      <div class="testimonial-author"><div class="testimonial-avatar">KH</div><div><span class="testimonial-name">Karen H.</span><span class="testimonial-dog">Mum to Bruno, rescue lurcher</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      <p class="testimonial-text">I can't recommend Jules enough. When we adopted Winston we needed someone to take him for some walks and a neighbour recommended Jules. SHE is AMAZING! Can't thank her enough.</p>
+      <div class="testimonial-author"><div class="testimonial-avatar">YA</div><div><span class="testimonial-name">YAS - Your Amazing Self</span><span class="testimonial-dog">Winston's family</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
     </div>
     <div class="testimonial-card">
-      <p class="testimonial-text">The photos she sends during walks always make my day. Our cockapoo absolutely adores her &mdash; she starts spinning with excitement the moment she sees Jules' car pull up.</p>
-      <div class="testimonial-author"><div class="testimonial-avatar">MT</div><div><span class="testimonial-name">Mark T.</span><span class="testimonial-dog">Dad to Rosie, cockapoo</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      <p class="testimonial-text">I can't recommend Jules enough! She did daily visits to feed and cuddle/play with my cat Batman whilst I was away on a short trip. Reliable, friendly, and brilliant with Batman who was belly-up for tummy tickles in no time at all! Jules also sent me daily pics and a wee update.</p>
+      <div class="testimonial-author"><div class="testimonial-avatar">SM</div><div><span class="testimonial-name">Suzette McCheese</span><span class="testimonial-dog">Batman's mum (yes, cats too!)</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
     </div>
     <div class="testimonial-card">
-      <p class="testimonial-text">We've tried three different walkers before Jules and she's head and shoulders above the rest. Reliable, communicative, and our golden retriever comes home absolutely knackered. Perfect.</p>
-      <div class="testimonial-author"><div class="testimonial-avatar">SL</div><div><span class="testimonial-name">Sarah L.</span><span class="testimonial-dog">Mum to Duke, golden retriever</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
+      <p class="testimonial-text">Jules is amazing with Grace &ndash; she is super patient and has very quickly become Grace's favourite person!</p>
+      <div class="testimonial-author"><div class="testimonial-avatar">LK</div><div><span class="testimonial-name">Liz Kingston</span><span class="testimonial-dog">Grace's mum</span><span class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div></div>
     </div>
   </div>
 </section>
@@ -514,7 +489,7 @@ footer { background:#1a1f16; padding:2rem; text-align:center; }
       </div>
       <div class="contact-info-item">
         <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div><h4>Coverage Area</h4><p>Chorlton, Stretford, Sale, Didsbury &amp; surrounding areas of South Manchester</p></div>
+        <div><h4>Coverage Area</h4><p>Chorlton, Whalley Range, Old Trafford &amp; surrounding areas of South Manchester</p></div>
       </div>
       <div class="contact-info-item">
         <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
@@ -608,9 +583,7 @@ function selectDate(day){
   document.getElementById('selectedDateDisplay').textContent=selectedDate.toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
   const sc=document.getElementById('timeSlots'),ss=document.getElementById('timeSlotSection');ss.style.display='block';sc.innerHTML='';
   const dw=selectedDate.getDay();
-  const slots=dw===6?
-    [{time:'8:00 AM'},{time:'10:00 AM'}]:
-    [{time:'7:00 AM'},{time:'9:30 AM'},{time:'12:00 PM'},{time:'2:30 PM'}];
+  const slots=[{time:'9:30 AM'},{time:'12:00 PM'}];
   slots.forEach(sl=>{
     const d=document.createElement('div');d.className='time-slot';
     d.innerHTML='<span class="slot-time">'+sl.time+'</span>';
